@@ -1,0 +1,42 @@
+services:
+  db:
+    # image: mysql:5.7
+    # platform: linux/arm64
+    # volumes:
+    #   - ./tmp/db:/var/lib/mysql
+    # environment:
+    #   MYSQL_ROOT_PASSWORD: password
+    #   MYSQL_DATABASE: INSECT_LOG_development
+
+    # platform: linux/amd64
+    # image: mysql:5.7
+    # volumes:
+    #   - data-volume:/var/lib/mysql
+    # environment:
+    #   MYSQL_ROOT_PASSWORD: password
+    # ports:
+    #   - "3306:3306"
+    image: mariadb
+    platform: linux/arm64/v8  # もしARMアーキテクチャを使っている場合はこの行を追加
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # 必要に応じてパスワードを設定
+      MYSQL_DATABASE: mydatabase  # 作成したいデータベース名
+      MYSQL_USER: user  # データベースユーザー名
+      MYSQL_PASSWORD: password  # ユーザーのパスワード
+    ports:
+      - "3306:3306"  # ホストとコンテナのポートマッピング
+    volumes:
+      - mydb:/var/lib/mysql  # データ永続化のためのボリューム
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && rails s -p 3000 -b '0.0.0.0'"
+    # command: bash -c "rm -f tmp/pids/server.pid && bin/dev"
+    volumes:
+      - .:/INSECT_LOG
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+volumes:
+  # data-volume:
+  mydb:

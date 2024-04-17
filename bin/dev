@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# foremanがインストールされていなければインストール
+if ! command -v foreman &> /dev/null
+then
+  echo "Installing foreman..."
+  gem install foreman
+fi
+
+# Procfile.devを元にforemanを起動
+foreman start -f Procfile.dev "$@"

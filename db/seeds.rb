@@ -7,14 +7,12 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-Insect.create(name: 'カブトムシ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'ノコギリクワガタ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'ミヤマクワガタ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'タマムシ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'カナブン', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'オオスズメバチ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'コガネムシ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'ミンミンゼミ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'ゾウムシ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-Insect.create(name: 'トコジラミ', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-# 画像はActive Storageを使って後で追加
+Insect.create(name: 'カブトムシ', image_url: 'kabutomushi.png', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+Insect.create(name: 'ノコギリクワガタ', image_url: 'nokogirikuwagata.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+Insect.create(name: 'ミヤマクワガタ', image_url: 'miyamakuwagata.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+Insect.create(name: 'ヘラクレスオオカブト', image_url: 'herakuresu.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+Insect.create(name: 'カナブン', image_url: 'kanabun.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+Insect.create(name: 'コクワガタ', image_url: 'kokuwagata.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+Insect.create(name: 'オオクワガタ', image_url: 'ookuwagata.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+
+

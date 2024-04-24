@@ -1,18 +1,24 @@
 <%= render 'shared/header' %>
+<div class="fv">
+    <%= image_tag 'home-fv.jpg', class: 'fv-img' %>
+</div>
 
 <div class="inner">
-<div class="contents">
-<h2 class="home-title">こんちゅうをつかまえにいきましょう。</h2>
-<div class="btn">
-  <a class="home-btn" href="<%= insect_path %>">雑木林</a>
-</div>
-<div class="btn">
-  <a class="home-btn" href="<%= insect_path %>">お花いっぱいの草原</a>
-</div>
-<div class="btn">
-  <a class="home-btn" href="<%= insect_path %>">河原・湿地帯</a>
-</div>
-</div>
+    <div class="contents">
+        <h2 class="home-title">こんちゅうをつかまえにいきましょう。</h2>
+        <h2 class="home-title">どこいく？</h2>
+        <div class="flex jcc items">
+            <div class="space">
+                <a class="home-btn" href="<%= insect_path %>">雑木林</a>
+            </div>
+            <div class="space">
+                <a class="home-btn" href="<%= insect_path %>">お花いっぱいの草原</a>
+            </div>
+            <div class="space">
+                <a class="home-btn" href="<%= insect_path %>">河原・湿地帯</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <%= render 'shared/footer' %>

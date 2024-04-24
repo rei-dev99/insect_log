@@ -14,5 +14,6 @@ Insect.create(name: 'ヘラクレスオオカブト', image_url: 'herakuresu.jpg
 Insect.create(name: 'カナブン', image_url: 'kanabun.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
 Insect.create(name: 'コクワガタ', image_url: 'kokuwagata.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
 Insect.create(name: 'オオクワガタ', image_url: 'ookuwagata.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
-
-
+Insect.create(name: 'ニジイロクワガタ', image_url: 'niziiro.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+Insect.create(name: 'コガネムシ', image_url: 'koganemusi.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')
+Insect.create(name: 'テントウムシ', image_url: 'tentomusi.jpg', description: 'なつによくみかけるむしで、おとこのこににんきのこんちゅうです')

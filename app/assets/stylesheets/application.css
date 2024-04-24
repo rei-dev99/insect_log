@@ -313,9 +313,29 @@ footer {
 
 .space {
     width: 33%;
-    
+    height: 200px;
+    position: relative;
+}
+.space a:hover {
+    opacity: 0.7;
+}
+.space-img {
+    width: 100%;
+    object-fit: cover;
+}
+.space a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #000;
 }
 
+
+/* show.html.erb */
 .show-img {
   width: 50%;
 }
@@ -324,22 +344,8 @@ footer {
   width: calc(100% - 50%);
 }
 
-.home-btn {
-    margin-top: 30px;
-    font-size: 20px;
-    padding: 15px 25px;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    background-color: #D9BD7E;
-    color: #fff;
-    font-weight: bold;
-    -webkit-text-stroke: 1px #000;
-}
-.home-btn:hover {
-    opacity: 0.7;
-}
 
-
+/* ここからレスポンシブ対応 */
 @media screen and (min-width: 351px) {
 	/* 351pxまでに適用されるCSS（タブレット用） */
     .inner {

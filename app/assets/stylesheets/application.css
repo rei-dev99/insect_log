@@ -315,6 +315,10 @@ footer {
     width: 33%;
     height: 200px;
     position: relative;
+    margin-left: 10px;
+}
+.space:first-child {
+    margin-left: 0;
 }
 .space a:hover {
     opacity: 0.7;
@@ -322,6 +326,7 @@ footer {
 .space-img {
     width: 100%;
     object-fit: cover;
+    height: 100%;
 }
 .space a p {
     position: absolute;
@@ -334,10 +339,13 @@ footer {
     -webkit-text-stroke: 1px #000;
 }
 
-
 /* show.html.erb */
 .show-img {
   width: 50%;
+  height: 400px;
+}
+.show-img img {
+    object-fit: contain;
 }
 .show-desc {
   width: calc(100% - 50%);

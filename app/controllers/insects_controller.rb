@@ -3,6 +3,7 @@ class InsectsController < ApplicationController
   end
 
   def show
-    @insect = Insect.order("RANDOM()").first
+    place = params[:place]
+    @insect = Insect.where(place: place).order("RANDOM()").first
   end
 end

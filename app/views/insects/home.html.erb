@@ -9,19 +9,19 @@
         <h2 class="home-title">どこいく？</h2>
         <div class="flex jcc items">
             <div class="space">
-                <a href="<%= insect_path %>">
+                <a href="<%= insect_path(place: '雑木林') %>">
                     <p>雑木林</p>
                     <%= image_tag 'zokibayashi.jpg', class: 'space-img' %>
                 </a>
             </div>
             <div class="space">
-                <a href="<%= insect_path %>">
+                <a href="<%= insect_path(place: '草原') %>">
                     <p>草原</p>
                     <%= image_tag 'sogenn.jpg', class: 'space-img' %>
                 </a>
             </div>
             <div class="space">
-                <a href="<%= insect_path %>">
+                <a href="<%= insect_path(place: '河原') %>">
                     <p>河原・湿地帯</p>
                     <%= image_tag 'kawara.jpg', class: 'space-img' %>
                 </a>

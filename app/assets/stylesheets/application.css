@@ -339,7 +339,6 @@ footer {
 .show-img {
   width: 50%;
 }
-
 .show-desc {
   width: calc(100% - 50%);
 }

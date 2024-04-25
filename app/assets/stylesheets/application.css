@@ -242,6 +242,8 @@ meter {
 /* 共通 */
 body {
     background-color: #D1FFB6;
+    /* font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'MS Ｐゴシック','MS PGothic' */
+    font-family: 'メイリオ', Meiryo,'Comic Sans MS','Comic Sans MS','Hannotate SC','Chalkduster',sans-serif;
 }
 
 .inner {
@@ -343,6 +345,7 @@ footer {
 .show-img {
   width: 50%;
   height: 400px;
+  background-color: #fff;
 }
 .show-img img {
     object-fit: contain;

@@ -2,13 +2,13 @@
 <div class="inner">
   <div class="contents">
     <h1 class="show-title">つかまえたのは....</h1>
-    <h1 class="show-title accent"><%= @insect.name %></h1>
+    <h1 class="show-title accent"><%= @insect[:name] %></h1>
     <div class="show-flex">
       <div class="show-img">
-        <img src="<%= asset_path(@insect.image_url) %>" alt="<%= @insect.name %>の画像">
+        <%= image_tag(@insect[:image_url], alt: @insect[:name]) %>
       </div>
       <div class="show-desc">
-        <p><%= @insect.description %></p>
+        <p><%= @insect[:description] %></p>
       </div>
     </div>
     <div class="show-btn"><%= link_to '戻る', root_path, class: 'home-link' %></div>

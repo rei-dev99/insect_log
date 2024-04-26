@@ -364,6 +364,9 @@ footer {
   width: 50%;
   height: 400px;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .show-img img {
     object-fit: contain;
@@ -393,15 +396,15 @@ footer {
 }
 
 /* ここからレスポンシブ対応 */
-@media screen and (min-width: 351px) {
-	/* 351pxまでに適用されるCSS（タブレット用） */
+@media screen and (min-width: 768px) {
+	/* 768pxまでに適用されるCSS（タブレット用） */
     .inner {
         padding: 20px;
     }
 }
 
-@media screen and (max-width: 350px) {
-	/* 350px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 767px) {
+	/* 767px以下に適用されるCSS（スマホ用） */
     .inner {
         padding: 0 10px;
     }
@@ -476,6 +479,7 @@ footer {
     .show-img {
         width: 100%;
         height: 250px;
+        display: block;
     }
 
     .show-desc {

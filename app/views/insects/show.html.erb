@@ -1,4 +1,18 @@
-<h1>きょう捕まえた虫はカナブンです</h1>
-<p>受益に群がる害虫です</p>
+<%= render 'shared/header' %>
+<div class="inner">
+  <div class="contents">
+    <h1>つかまえたのは....</h1>
+    <h1><%= @insect.name %></h1>
+    <div class="flex">
+      <div class="show-img">
+        <img src="<%= asset_path(@insect.image_url) %>" alt="<%= @insect.name %>の画像">
+      </div>
+      <div class="show-desc">
+        <p><%= @insect.description %></p>
+      </div>
+    </div>
+    <%= link_to '戻る', root_path  %>
 
-<%# image_tag @insect.image if @insect.image.attached? %>
+  </div>
+</div>
+<%= render 'shared/footer' %>

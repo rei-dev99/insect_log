@@ -394,6 +394,22 @@ footer {
 }
 .home-link:hover {
     opacity: 0.7;
+    background-color: #D1FFB6;
+    -webkit-text-stroke: 1px #000;
+}
+
+.share_btn {
+    margin-top: 30px;
+}
+.share {
+    padding: 10px;
+    background: #A3F2FF;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.share:hover {
+    font-weight: bold;
+    opacity: 0.7;
 }
 
 /* ここからレスポンシブ対応 */
@@ -496,6 +512,16 @@ footer {
 
     .home-link {
         padding: 10px;
+    }
+
+    .share_btn {
+        margin-top: 20px;
+    }
+
+    .share {
+        padding: 6px;
+        border-radius: 10px;
+        font-size: 12px;
     }
 
     footer {

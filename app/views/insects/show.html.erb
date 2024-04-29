@@ -1,7 +1,7 @@
 <%= render 'shared/header' %>
 <div class="inner">
   <div class="contents">
-    <h1 class="show-title">つかまえたのは....</h1>
+    <h1 class="show-title"><%= @insect[:place] %>でつかまえたのは....</h1>
     <h1 class="show-title accent"><%= @insect[:name] %></h1>
     <div class="show-flex">
       <div class="show-img">

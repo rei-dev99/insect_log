@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="share_btn">
-      <%= link_to 'Xで共有する', "https://twitter.com/share?url=https://insect-log.onrender.com&text=(捕まえた昆虫を入力)を(雑木林or草原or河原)でつかまえたよ！みんなもインセクトログで昆虫探しの冒険に出かけよう！", title: 'Xで共有する', target: '_blank', class: 'share' %>
+      <%= link_to 'Xで共有する', "https://twitter.com/share?url=https://insect-log.onrender.com&text=#{CGI.escape("#{@insect[:name]}を#{params[:place]}でつかまえたよ！みんなもインセクトログで昆虫探しの冒険に出かけよう！#インセクトログ")}", title: 'Xで共有する', target: '_blank', class: 'share' %>
     </div>
   <div class="show-btn"><%= link_to '戻る', root_path, class: 'home-link' %></div>
   </div>

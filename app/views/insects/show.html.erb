@@ -11,10 +11,8 @@
         <p><%= @insect[:description] %></p>
       </div>
     </div>
-    <%= link_to 'Twitterで自慢する', "https://twitter.com/share?url=https://insect-log.onrender.com&text=カブトムシ！みんなも見てみて！", title: 'Twitterで自慢する', target: '_blank' %>
+  <div class="show-btn"><%= link_to '戻る', root_path, class: 'home-link' %></div>
   </div>
-    <div class="show-btn"><%= link_to '戻る', root_path, class: 'home-link' %></div>
-
   </div>
 </div>
 <%= render 'shared/footer' %>

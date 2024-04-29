@@ -244,6 +244,7 @@ body {
     background-color: #D1FFB6;
     /* font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'MS Ｐゴシック','MS PGothic' */
     font-family: 'メイリオ', Meiryo,'Comic Sans MS','Comic Sans MS','Hannotate SC','Chalkduster',sans-serif;
+    color: #1E1E1E;
 }
 
 .inner {

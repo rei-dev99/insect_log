@@ -12,6 +12,9 @@
         <div class="share_btn">
           <%= link_to 'Xで共有する', "https://twitter.com/intent/tweet?url=https://insect-log.onrender.com&text=#{CGI.escape("#{@insect[:name]}を#{params[:place]}でつかまえたよ！みんなもインセクトログで昆虫探しの冒険に出かけよう！#インセクトログ")}", title: 'Xで共有する', target: '_blank', class: 'share' %>
         </div>
+        <div class="reload">
+          <button onclick="location.reload();" class="reload-button">もう一度つかまえにいく</button>
+        </div>
       </div>
     </div>
   <div class="show-btn"><%= link_to '戻る', root_path, class: 'home-link' %></div>

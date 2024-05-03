@@ -412,6 +412,24 @@ footer {
     opacity: 0.7;
 }
 
+.reload {
+    margin-top: 30px;
+}
+
+.reload-button {
+    padding: 10px;
+    background: #FFF2B5;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.reload-button:hover {
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+
+
 /* ここからレスポンシブ対応 */
 @media screen and (min-width: 768px) {
 	/* 768pxまでに適用されるCSS（タブレット用） */
@@ -519,6 +537,16 @@ footer {
     }
 
     .share {
+        padding: 6px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .reload {
+        margin-top: 20px;
+    }
+
+    .reload-button {
         padding: 6px;
         border-radius: 10px;
         font-size: 12px;
